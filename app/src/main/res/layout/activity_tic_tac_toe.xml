@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clTicTacToeActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="games.tictactoe.TicTacToeActivity">
+
+    <TableLayout
+        android:id="@+id/tlBoard"
+        android:layout_width="359dp"
+        android:layout_height="358dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="110"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imvCell00"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:keepScreenOn="false"
+                android:scaleType="center"
+                android:visibility="visible"
+                app:srcCompat="@drawable/label_empty_icon"
+                tools:srcCompat="@drawable/label_empty_icon"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imvCell01"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:keepScreenOn="false"
+                android:scaleType="center"
+                android:visibility="visible"
+                app:srcCompat="@drawable/label_empty_icon"
+                tools:srcCompat="@drawable/label_empty_icon"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imvCell02"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:keepScreenOn="false"
+                android:scaleType="center"
+                android:visibility="visible"
+                app:srcCompat="@drawable/label_empty_icon"
+                tools:srcCompat="@drawable/label_empty_icon"
+                tools:visibility="visible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imvCell10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:keepScreenOn="false"
+                android:scaleType="center"
+                android:visibility="visible"
+                app:srcCompat="@drawable/label_empty_icon"
+                tools:srcCompat="@drawable/label_empty_icon"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imvCell11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:keepScreenOn="false"
+                android:scaleType="center"
+                android:visibility="visible"
+                app:srcCompat="@drawable/label_empty_icon"
+                tools:srcCompat="@drawable/label_empty_icon"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imvCell12"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:keepScreenOn="false"
+                android:scaleType="center"
+                android:visibility="visible"
+                app:srcCompat="@drawable/label_empty_icon"
+                tools:srcCompat="@drawable/label_empty_icon"
+                tools:visibility="visible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imvCell20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:keepScreenOn="false"
+                android:scaleType="center"
+                android:visibility="visible"
+                app:srcCompat="@drawable/label_empty_icon"
+                tools:srcCompat="@drawable/label_empty_icon"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imvCell21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:keepScreenOn="false"
+                android:scaleType="center"
+                android:visibility="visible"
+                app:srcCompat="@drawable/label_empty_icon"
+                tools:srcCompat="@drawable/label_empty_icon"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imvCell22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:keepScreenOn="false"
+                android:scaleType="center"
+                android:visibility="visible"
+                app:srcCompat="@drawable/label_empty_icon"
+                tools:srcCompat="@drawable/label_empty_icon"
+                tools:visibility="visible" />
+        </TableRow>
+
+    </TableLayout>
+
+    <SeekBar
+        android:id="@+id/sbDifficulty"
+        style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+        android:layout_width="276dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="52dp"
+        android:max="2"
+        android:progress="21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEasy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/tictactoe_difficulty_level_easy"
+        android:textAlignment="viewStart"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvHard"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/tictactoe_difficulty_level_easy" />
+
+    <TextView
+        android:id="@+id/tvHard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="22dp"
+        android:text="@string/tictactoe_difficulty_level_hard"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvExpert"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/tictactoe_difficulty_level_hard" />
+
+    <TextView
+        android:id="@+id/tvExpert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="19dp"
+        android:text="@string/tictactoe_difficulty_level_expert"
+        android:textAlignment="viewEnd"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/tictactoe_difficulty_level_expert" />
+
+    <ImageView
+        android:id="@+id/ivwBoard"
+        android:layout_width="421dp"
+        android:layout_height="426dp"
+        android:layout_marginTop="60dp"
+        android:fadingEdge="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tic_tac_toe_boad"
+        tools:srcCompat="@drawable/tic_tac_toe_boad" />
+
+    <TableLayout
+        android:id="@+id/tblScore"
+        android:layout_width="395dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="100"
+                android:gravity="center_horizontal"
+                android:text="@string/tictactoe_human_score"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="100"
+                android:gravity="center_horizontal"
+                android:text="@string/tictactoe_bot_score"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="100"
+                android:gravity="center_horizontal"
+                android:text="@string/tictactoe_match_number"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="100">
+
+            <TextView
+                android:id="@+id/tvHumanScore"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="100"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/tvBotScore"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="100"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/tvDrawNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="100"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="0" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/imvHuman"
+        android:layout_width="85dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/human_icon" />
+
+    <ImageView
+        android:id="@+id/imvBot"
+        android:layout_width="109dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="9dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/android_icon" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="29dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="96dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/line_icon" />
+
+    <ImageView
+        android:id="@+id/imvArrow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_left_icon" />
+
+    <ImageView
+        android:id="@+id/imvArrow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="192dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_rigth_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

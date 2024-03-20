@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/sound_effect_on"
+        android:icon="@drawable/speaker_on_icon"
+        android:title="@string/popup_menu_play_sound_on" />
+    <item
+        android:id="@+id/sound_effect_off"
+        android:icon="@drawable/speaker_off_icon"
+        android:title="@string/popup_menu_play_sound_off" />
+</menu>

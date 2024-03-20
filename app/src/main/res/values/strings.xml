@@ -1,0 +1,36 @@
+<resources>
+    <!-- Menus and toolbars strings -->
+    <string name="app_name">Passatempo</string>
+    <string name="toolbar_menu_about">Sobre...</string>
+    <string name="toolbar_menu_tutorial">Tutorial</string>
+    <string name="toolbar_text">@string/app_name</string>
+    <string name="popup_menu_play_sound_on">Com efeitos sonoros</string>
+    <string name="popup_menu_play_sound_off">Sem efeitos sonoros</string>
+    <!-- MainActivity strings -->
+    <string name="game_item_title_tictactoe">JOGO DA VELHA</string>
+    <string name="game_item_description_tictactoe">Jogue o tradicional jogo da velha disputando contra o próprio Android. Você pode configurar o nível de dificuldade.</string>
+    <string name="game_item_title_hanoi_tower">TORRE DE HANÓI</string>
+    <string name="game_item_description_hanoi_tower">Transfira todos os discos da primeira para a última haste. Você pode utilizar a haste do meio para movimentar.</string>
+    <string name="game_item_title_hangman">JOGO DA FORCA</string>
+    <string name="game_item_description_hangman">Acerte a palavra soletrando suas letras. Você terá uma dica sobre o significado dela. Se não acertar... Forca!</string>
+    <string name="game_item_title_maze_game">RATO NO LABIRINTO</string>
+    <string name="game_item_description_maze_game">Conduza nosso amigo roedor pelo labirinto até achar a saída. Se encontrar o caminho, um suculento queijo o aguarda.</string>
+    <string name="game_item_title_memory_game">JOGO DA MEMÓRIA</string>
+    <string name="game_item_description_memory_game">Memorize as posições em que estão os pares de figuras. Após ocultar, clique nestas posições para revela-los.</string>
+    <string name="game_item_title_hidden_suspect">SUSPEITO OCULTO</string>
+    <string name="game_item_description_hidden_suspect">Memorize o rosto do suspeito. Após ele desaparecer, selecione na lista qual é o rosto que você memorizou.</string>
+    <string name="about_dialog_developer">Desenvolvedor: Leandro A. Almeida</string>
+    <string name="about_dialog_version_date">Data da Versão: 08 de maio de 2023</string>
+    <string name="about_dialog_version_number">v 1.0</string>
+    <!-- TicTacToeActivity strings -->
+    <string name="tictactoe_difficulty_level">Nível de dificuldade</string>
+    <string name="tictactoe_difficulty_level_easy">Normal</string>
+    <string name="tictactoe_difficulty_level_hard">Experiente</string>
+    <string name="tictactoe_difficulty_level_expert">Invencível</string>
+    <string name="tictactoe_human_score">Sua Pontução</string>
+    <string name="tictactoe_bot_score">Pont. Sistema</string>
+    <string name="tictactoe_match_number">Núm. Partida</string>
+    <string name="tictactoe_cell_isnot_empty_message">Casa não está vazia</string>
+    <!-- HanoiTowerActivity strings -->
+    <string name="hanoitower_disc_number">Número de discos:</string>
+</resources>
